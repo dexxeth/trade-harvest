@@ -14,7 +14,7 @@ const Trending = () => {
       <div className="">
         <Carousel opts={{ loop: true }} className="w-full">
           <CarouselContent>
-            {trending.map((item) => (
+            {trending.map((item) => (	
               <CarouselItem key={item.id}>
                 <div>
                   <Card className="w-full h-40 flex items-center justify-center">
