@@ -1,9 +1,25 @@
-import React from 'react'
+"use client";
+import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+import { useState, useEffect } from "react";
 
 const Account = () => {
-  return (
-    <div>Account</div>
-  )
-}
+	const [isClient, setIsClient] = useState(false);
 
-export default Account
+	useEffect(() => {
+		setIsClient(true);
+	}, []);
+
+	return (
+		<div>
+			<div className="flex flex- items-center justify-start h-32 bg-white rounded-md p-4 mx-4">
+				{isClient && (
+					<SignedIn>
+						<UserButton showName />
+					</SignedIn>
+				)}
+			</div>
+		</div>
+	);
+};
+
+export default Account;

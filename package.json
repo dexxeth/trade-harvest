@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@clerk/nextjs": "^5.4.1",
     "@heroicons/react": "^2.1.5",
     "@hugeicons/react-pro": "^0.3.2",
     "@radix-ui/react-avatar": "^1.1.0",
@@ -26,6 +27,7 @@
     "heroicons": "^2.1.5",
     "lucide-react": "^0.437.0",
     "next": "14.2.7",
+    "radix-ui": "^1.0.1",
     "react": "^18",
     "react-day-picker": "^8.10.1",
     "react-dom": "^18",

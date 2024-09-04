@@ -118,4 +118,19 @@
       { id: 2, user: "Shyamdhan", rating: 4, comment: "Mazedar" },
     ],
   },
+  {
+    id: 8,
+    name: "Ginger",
+    price: 5700,
+    image: "/images/ginger.jpg",
+    location: "Sirsa, India",
+    uploadTime: new Date(2024, 7, 10, 15, 10),
+    description: "Organic Gingers directly from Rohtak for only you .",
+    rating: 4.5,
+    images: ["/images/giger.jpg", "/images/ginger.jpg"], // Add your images here
+    reviews: [
+      { id: 2, user: "Jugmeender", rating: 5, comment: "Fresh and tasty!" },
+      { id: 2, user: "Shyamdhan", rating: 4, comment: "Mazedar" },
+    ],
+  },
 ];
