@@ -6,14 +6,6 @@ import { MapPin, Clock } from "lucide-react";
 // Sample product data (replace with your actual data source)
 const products = [
   {
-    id: 1,
-    name: "Fresh Tomatoes",
-    price: 2.99,
-    image: "/placeholder.svg",
-    location: "Green Farm",
-    uploadTime: new Date(2023, 5, 10, 14, 30),
-  },
-  {
     id: 2,
     name: "Organic Apples",
     price: 3.99,
