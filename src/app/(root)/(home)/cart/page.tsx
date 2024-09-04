@@ -205,6 +205,22 @@ const products = [
     location: "Leafy Greens Farm",
     uploadTime: new Date(2023, 5, 13, 8, 5),
   },
+  {
+    id: 5,
+    name: "Carrots Bundle",
+    price: 2.5,
+    image: "/placeholder.svg",
+    location: "Root Veggie Gardens",
+    uploadTime: new Date(2023, 5, 12, 15, 10),
+  },
+  {
+    id: 6,
+    name: "Lettuce Head",
+    price: 1.99,
+    image: "/placeholder.svg",
+    location: "Leafy Greens Farm",
+    uploadTime: new Date(2023, 5, 13, 8, 5),
+  },
 ];
 
 function formatRelativeTime(date: Date) {
