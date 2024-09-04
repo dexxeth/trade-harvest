@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useRouter } from "next/navigation";
@@ -6,6 +7,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import { formatDistanceToNow } from "date-fns";
 import { MapPin, Clock } from "lucide-react";
 import { products } from "@/app/data/items";
+import Image from "next/image";
+import { Card, CardContent } from "@/components/ui/card";
+import { formatDistanceToNow } from "date-fns";
+import { MapPin, Clock } from "lucide-react";
 
 function formatRelativeTime(date: Date) {
   return formatDistanceToNow(date, { addSuffix: true });
@@ -44,6 +49,7 @@ export default function ProductListPage() {
               </h2>
               <p className="text-primary font-bold mb-2">
                 ₹{product.price.toFixed(2)}
+
               </p>
               <div className="flex items-center text-xs text-muted-foreground mb-1">
                 <MapPin className="w-3 h-3 mr-1" />
@@ -58,5 +64,3 @@ export default function ProductListPage() {
         ))}
       </div>
     </div>
-  );
-}
