@@ -9,6 +9,8 @@ const Home = () => {
 			</div>
 			<div className="p-2 sm:px-2 md:px-4">
 				<Graph />
+
+				hello ayush!
 			</div>
 		</main>
 	);
