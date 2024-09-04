@@ -48,9 +48,9 @@ const Navbar = () => {
           </li>
         </Link>
 
-        <Link href="/shopping">
+        <Link href="/cart">
           <li className="flex flex-col items-center">
-            {pathname === "/shopping" ? (
+            {pathname === "/cart" ? (
               <MdShoppingBag size="24" color="white" />
             ) : (
               <MdOutlineShoppingBag size="24" color="white" />
