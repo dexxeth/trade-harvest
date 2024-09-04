@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@clerk/nextjs": "^5.4.1",
     "@heroicons/react": "^2.1.5",
     "@hugeicons/react-pro": "^0.3.2",
     "@radix-ui/react-avatar": "^1.1.0",
