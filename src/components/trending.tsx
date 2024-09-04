@@ -1,41 +1,39 @@
 import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
+	Carousel,
+	CarouselContent,
+	CarouselItem,
+	CarouselNext,
+	CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
 import { trending } from "@/app/data/carousel";
 
 const Trending = () => {
-  return (
-    <div>
-      <div className="">
-        <Carousel opts={{ loop: true }} className="w-full">
-          <CarouselContent>
-            {trending.map((item) => (	
-              <CarouselItem key={item.id}>
-                <div>
-                  <Card className="w-full h-40 flex items-center justify-center">
-                    <CardContent className=" p-0">
-                      <img
-                        src={item.imageUrl}
-                        alt={item.title}
-                        className="object-cover w-full h-full"
-                      />
-                    </CardContent>
-                  </Card>
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          {/* <CarouselPrevious />
+	return (
+		<div>
+			<Carousel opts={{ loop: true }} className="w-full">
+				<CarouselContent>
+					{trending.map((item) => (
+						<CarouselItem key={item.id}>
+							<div>
+								<Card className="flex items-center justify-center shadow-md border-none">
+									<CardContent className="p-0">
+										<img
+											src={item.imageUrl}
+											alt={item.title}
+											className="object-cover"
+										/>
+									</CardContent>
+								</Card>
+							</div>
+						</CarouselItem>
+					))}
+				</CarouselContent>
+				{/* <CarouselPrevious />
 				<CarouselNext /> */}
-        </Carousel>
-      </div>
-    </div>
-  );
+			</Carousel>
+		</div>
+	);
 };
 
 export default Trending;

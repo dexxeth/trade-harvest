@@ -6,6 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { formatDistanceToNow } from "date-fns";
 import { MapPin, Clock } from "lucide-react";
 import { products } from "@/app/data/items";
+import { Input } from "@/components/ui/input";
 
 function formatRelativeTime(date: Date) {
 	return formatDistanceToNow(date, { addSuffix: true });
@@ -19,10 +20,14 @@ export default function ProductListPage() {
 	};
 
 	return (
-		<div className="min-h-screen  container mx-auto mb-16 px-4">
-			<div className="sticky bg-[#262626] m-2 p-2 rounded-full top-2 my-4">
-				Search bar
-			</div>
+		<div className="min-h-screen container mx-auto mb-16 px-4">
+			<form className="sticky top-2">
+				<Input
+					type="text"
+					placeholder="Search product"
+					className=" bg-white shadow-md my-4 p-2 rounded-full"
+				/>
+			</form>
 			<h1 className="text-2xl font-bold mb-6 overflow-hidden">
 				Products
 			</h1>

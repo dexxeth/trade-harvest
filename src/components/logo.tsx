@@ -5,19 +5,18 @@ import { Button } from "@/components/ui/button";
 
 export default function Component() {
   return (
-    <nav className="sticky top-0 left-0 right-0 z-50 bg-white shadow-md">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+    <nav className="top-0 w-full z-50 bg-white shadow-sm">
+        <div className="container mx-auto px-4 flex items-center justify-between h-12">
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
               src="/images/logo.png"
               alt="Logo"
-              width={40}
-              height={40}
+              width={44}
+              height={44}
               className="mr-2"
             />
-            <span className="text-2xl font-bold text-primary">
+            <span className="text-xl font-bold text-primary">
               Trade Harvest
             </span>{" "}
             {}
@@ -33,7 +32,6 @@ export default function Component() {
             </Button>
           </div>
         </div>
-      </div>
     </nav>
   );
 }

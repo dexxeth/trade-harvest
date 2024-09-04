@@ -49,7 +49,7 @@ export function Graph() {
         {Array.from({ length: 5 }).map((_, index) => (
           <CarouselItem key={index}>
             <div>
-              <Card>
+              <Card className="">
                 <CardHeader>
                   <CardTitle>Wheat</CardTitle>
                   <CardDescription>Last 7 days rate</CardDescription>

@@ -40,10 +40,10 @@ export default function Component() {
   };
 
   return (
-    <div className="min-h-screen bg-[#101010] p-4">
+    <div className="min-h-screen p-4">
       <form
         onSubmit={handleSubmit}
-        className="space-y-6 bg-[#101010] p-6 rounded-lg shadow-md"
+        className="space-y-6  p-6 rounded-lg shadow-md"
       >
         <h1 className="text-2xl font-bold text-center mb-6">Upload Product</h1>
 
