@@ -22,7 +22,6 @@ const products = [
   { id: 3, name: "Farm Eggs", price: 4.50, image: "/placeholder.svg", location: "Happy Hens Farm", uploadTime: new Date(2023, 5, 11, 16, 45) },
   { id: 4, name: "Honey Jar", price: 6.99, image: "/placeholder.svg", location: "Buzzy Bee Apiary", uploadTime: new Date(2023, 5, 12, 11, 20) },
   { id: 5, name: "Carrots Bundle", price: 2.50, image: "/placeholder.svg", location: "Root Veggie Gardens", uploadTime: new Date(2023, 5, 12, 15, 10) },
-  { id: 6, name: "Lettuce Head", price: 1.99, image: "/placeholder.svg", location: "Leafy Greens Farm", uploadTime: new Date(2023, 5, 13, 8, 5) },
 ] 
 
 function formatRelativeTime(date: Date) {
