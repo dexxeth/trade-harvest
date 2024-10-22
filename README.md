@@ -34,3 +34,99 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+```
+trade-harvest
+├─ next.config.mjs
+├─ package-lock.json
+├─ package.json
+├─ postcss.config.mjs
+├─ public
+│  ├─ icons
+│  ├─ images
+│  │  ├─ apple.jpeg
+│  │  ├─ carrot.jpg
+│  │  ├─ corn.jpg
+│  │  ├─ drought.jpeg
+│  │  ├─ ginger.jpg
+│  │  ├─ lady.jpeg
+│  │  ├─ logo.png
+│  │  ├─ market.jpg
+│  │  ├─ minister.jpg
+│  │  ├─ photo.jpg
+│  │  ├─ potato.jpg
+│  │  ├─ scheme1.png
+│  │  ├─ scheme2.jpg
+│  │  ├─ scheme3.webp
+│  │  ├─ scheme4.jpg
+│  │  ├─ ship.jpg
+│  │  ├─ tomato.jpg
+│  │  ├─ weather.png
+│  │  └─ wheat.jpg
+│  ├─ next.svg
+│  └─ vercel.svg
+├─ README.md
+├─ src
+│  ├─ app
+│  │  ├─ (auth)
+│  │  │  ├─ sign-in
+│  │  │  │  └─ [[...sign-in]]
+│  │  │  │     └─ page.tsx
+│  │  │  └─ sign-up
+│  │  │     └─ [[...sign-up]]
+│  │  │        └─ page.tsx
+│  │  ├─ (root)
+│  │  │  ├─ (home)
+│  │  │  │  ├─ cart
+│  │  │  │  │  └─ page.tsx
+│  │  │  │  ├─ explore
+│  │  │  │  │  └─ page.tsx
+│  │  │  │  ├─ layout.tsx
+│  │  │  │  ├─ list
+│  │  │  │  │  └─ page.tsx
+│  │  │  │  ├─ messaging
+│  │  │  │  │  └─ page.tsx
+│  │  │  │  ├─ page.tsx
+│  │  │  │  ├─ profile
+│  │  │  │  │  └─ page.tsx
+│  │  │  │  └─ shopping
+│  │  │  │     └─ page.tsx
+│  │  │  └─ layout.tsx
+│  │  ├─ data
+│  │  │  ├─ carousel.ts
+│  │  │  ├─ items.ts
+│  │  │  └─ news.ts
+│  │  ├─ favicon.ico
+│  │  ├─ globals.css
+│  │  ├─ layout.tsx
+│  │  └─ [id]
+│  │     └─ page.tsx
+│  ├─ components
+│  │  ├─ graph.tsx
+│  │  ├─ logo.tsx
+│  │  ├─ navbar.tsx
+│  │  ├─ news.tsx
+│  │  ├─ trending.tsx
+│  │  └─ ui
+│  │     ├─ avatar.tsx
+│  │     ├─ badge.tsx
+│  │     ├─ button.tsx
+│  │     ├─ calendar.tsx
+│  │     ├─ card.tsx
+│  │     ├─ carousel.tsx
+│  │     ├─ chart.tsx
+│  │     ├─ input.tsx
+│  │     ├─ label.tsx
+│  │     ├─ popover.tsx
+│  │     ├─ separator.tsx
+│  │     ├─ sheet.tsx
+│  │     └─ textarea.tsx
+│  ├─ context
+│  │  └─ ProductsContext.tsx
+│  ├─ lib
+│  │  └─ utils.ts
+│  └─ middleware.ts
+├─ tailwind.config.ts
+└─ tsconfig.json
+
+```
