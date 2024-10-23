@@ -60,7 +60,7 @@ export default function Component() {
   };
 
   return (
-    <div className="min-h-screen p-4">
+    <div className="min-h-screen p-4 mb-12">
       <form
         onSubmit={handleSubmit}
         className="space-y-4 p-6 rounded-lg shadow-md bg-white"
@@ -102,7 +102,7 @@ export default function Component() {
           <Input
             id="Quantity"
             name="Quantity"
-            placeholder="Enter product Quantity in Tons"
+            placeholder="Enter product Quantity in Quintal"
             required
           />
         </div>
