@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Component() {
 	return (
-		<nav className="top-0 sticky w-full z-50 bg-white shadow-sm">
+		<nav className="w-full z-50 bg-white shadow-sm">
 			<div className="container mx-auto px-4 flex items-center justify-between h-12">
 				<Link href="/" className="flex items-center">
 					<Image

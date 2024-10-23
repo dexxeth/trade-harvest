@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-import { ProductsProvider } from "@/context/ProductsContext";
+import { ProductsProvider } from "@/components/ProductsContext";
 import { ClerkProvider } from "@clerk/nextjs";
 
 
