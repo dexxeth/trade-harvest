@@ -18,11 +18,10 @@ import { format } from "date-fns";
 import { useRouter } from "next/navigation";
 
 export default function Component() {
-  const { addProduct } = useProducts();
   const [date, setDate] = useState<Date>();
   const router = useRouter();
 
-  const handleSubmit = (event: React.FormEvent) => {
+  const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     const formData = new FormData(event.target as HTMLFormElement);
 
@@ -39,8 +38,25 @@ export default function Component() {
       reviews: [],
     };
 
-    addProduct(newProduct);
-    router.push(`/${newProduct.id}`); // Redirect to the products page after submission
+    try {
+      // Send a POST request to the API route
+      const response = await fetch("./pages/api/products", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(newProduct),
+      });
+
+      if (response.ok) {
+        // Optionally navigate to a new page
+        router.push(`/${newProduct.id}`);
+      } else {
+        console.error("Failed to submit product");
+      }
+    } catch (error) {
+      console.error("An error occurred while submitting the product:", error);
+    }
   };
 
   return (
@@ -62,7 +78,7 @@ export default function Component() {
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="location">Category</Label>
+          <Label htmlFor="Category">Category</Label>
           <Input
             id="Category"
             name="Category"
@@ -82,7 +98,7 @@ export default function Component() {
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="location">Quantity</Label>
+          <Label htmlFor="Quantity">Quantity</Label>
           <Input
             id="Quantity"
             name="Quantity"
@@ -90,7 +106,7 @@ export default function Component() {
             required
           />
         </div>
-		
+
         <div className="space-y-2">
           <Label>Date</Label>
           <Popover>
@@ -118,18 +134,18 @@ export default function Component() {
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="location">State</Label>
+          <Label htmlFor="State">State</Label>
           <Input
-            id="location"
+            id="State"
             name="State"
             placeholder="Enter product State"
             required
           />
         </div>
         <div className="space-y-2">
-          <Label htmlFor="location">City</Label>
+          <Label htmlFor="City">City</Label>
           <Input
-            id="location"
+            id="City"
             name="City"
             placeholder="Enter product City"
             required
