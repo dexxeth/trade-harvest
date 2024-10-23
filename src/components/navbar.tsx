@@ -26,9 +26,9 @@ const Navbar = () => {
 				<Link href="/">
 					<li className="flex flex-col items-center">
 						{pathname === "/" ? (
-							<GoHomeFill size="24" />
+							<GoHomeFill size="28" />
 						) : (
-							<GoHome size="24" />
+							<GoHome size="28" />
 						)}
 					</li>
 				</Link>
@@ -36,9 +36,9 @@ const Navbar = () => {
 				<Link href="/explore">
 					<li className="flex flex-col items-center">
 						{pathname === "/explore" ? (
-							<MdExplore size="24" />
+							<MdExplore size="28" />
 						) : (
-							<MdOutlineExplore size="24" />
+							<MdOutlineExplore size="28" />
 						)}
 					</li>
 				</Link>
@@ -46,9 +46,9 @@ const Navbar = () => {
 				<Link href="/list">
 					<li className="flex flex-col items-center">
 						{pathname === "/list" ? (
-							<IoAddCircle size="36" />
+							<IoAddCircle size="32" />
 						) : (
-							<IoAddCircleOutline size="36" />
+							<IoAddCircleOutline size="32" />
 						)}
 					</li>
 				</Link>
@@ -56,9 +56,9 @@ const Navbar = () => {
 				<Link href="/shopping">
 					<li className="flex flex-col items-center">
 						{pathname === "/shopping" ? (
-							<RiShoppingBag4Fill size="24" />
+							<RiShoppingBag4Fill size="28" />
 						) : (
-							<RiShoppingBag4Line size="24" />
+							<RiShoppingBag4Line size="28" />
 						)}
 					</li>
 				</Link>
@@ -66,9 +66,9 @@ const Navbar = () => {
 				<Link href="/profile">
 					<li className="flex flex-col items-center">
 						{pathname === "/profile" ? (
-							<RiAccountCircleFill size="24" />
+							<RiAccountCircleFill size="28" />
 						) : (
-							<RiAccountCircleLine size="24" />
+							<RiAccountCircleLine size="28" />
 						)}
 					</li>
 				</Link>

@@ -5,7 +5,7 @@ import React, { ReactNode } from "react";
 const HomeLayout = ({ children }: { children: ReactNode }) => {
 	return (
 		<main className="relative">
-			<div>
+			<div className="sticky top-0 z-50">
 				<Logo />
 			</div>
 			<div className="">
