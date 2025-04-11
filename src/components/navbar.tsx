@@ -43,9 +43,9 @@ const Navbar = () => {
 					</li>
 				</Link>
 
-				<Link href="/list">
+				<Link href="/upload">
 					<li className="flex flex-col items-center">
-						{pathname === "/list" ? (
+						{pathname === "/upload" ? (
 							<IoAddCircle size="32" />
 						) : (
 							<IoAddCircleOutline size="32" />
